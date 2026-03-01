@@ -5,21 +5,21 @@
 class Clockr < Formula
   desc "AI-powered time-tracking CLI for Clockify"
   homepage "https://github.com/christopherklint97/clockr"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/christopherklint97/clockr/releases/download/v0.2.1/clockr_0.2.1_darwin_amd64.tar.gz"
-      sha256 "553c823761da271d321a7ae082f528afc15371e42fc7fdc190c5dec7bdf0971e"
+      url "https://github.com/christopherklint97/clockr/releases/download/v0.2.2/clockr_0.2.2_darwin_amd64.tar.gz"
+      sha256 "63ffc511f39113708538ccfed0512942dd35cdfd21b54fc5d0eba03800c3fe6d"
 
       define_method(:install) do
         bin.install "clockr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/christopherklint97/clockr/releases/download/v0.2.1/clockr_0.2.1_darwin_arm64.tar.gz"
-      sha256 "c84b9fbe7b7d424a5ab94a9e94145316558208645e91ed41ef603ad16661af5f"
+      url "https://github.com/christopherklint97/clockr/releases/download/v0.2.2/clockr_0.2.2_darwin_arm64.tar.gz"
+      sha256 "26161e2cdee6c04e19ca7108771b32bb7f8595502785e104526f8361b6db265f"
 
       define_method(:install) do
         bin.install "clockr"
@@ -29,15 +29,15 @@ class Clockr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/christopherklint97/clockr/releases/download/v0.2.1/clockr_0.2.1_linux_amd64.tar.gz"
-      sha256 "b8e2378488d5b81e404c6973c51ba6f85e4506ac70fabf81b153adf9e84e4e8f"
+      url "https://github.com/christopherklint97/clockr/releases/download/v0.2.2/clockr_0.2.2_linux_amd64.tar.gz"
+      sha256 "6fe29a05b4922eeb24f9a3f96c866739504faf3baf4591d479d43061fd545cb9"
       define_method(:install) do
         bin.install "clockr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/christopherklint97/clockr/releases/download/v0.2.1/clockr_0.2.1_linux_arm64.tar.gz"
-      sha256 "82a78fa75fb17ce5e9443f2098dca74c3f8b6e7c9ca20ddaca6d0323e7832f90"
+      url "https://github.com/christopherklint97/clockr/releases/download/v0.2.2/clockr_0.2.2_linux_arm64.tar.gz"
+      sha256 "2ab08d38fb3c586f595a0bf87ebdb8040d697bbbd21c63806d357ae37a4c5b0a"
       define_method(:install) do
         bin.install "clockr"
       end
