@@ -5,21 +5,21 @@
 class Taxpilot < Formula
   desc "AI-assisted US tax filing CLI"
   homepage "https://github.com/christopherklint97/taxpilot"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/christopherklint97/taxpilot/releases/download/v0.1.0/taxpilot_0.1.0_darwin_amd64.tar.gz"
-      sha256 "8cfb3e309217016282b55a8ce73a4a53e7f3c0b475d58a4d654d39d81b280b3d"
+      url "https://github.com/christopherklint97/taxpilot/releases/download/v0.1.1/taxpilot_0.1.1_darwin_amd64.tar.gz"
+      sha256 "7e0653015b40da9d6f793ff1488e4384e671ed0da6127cbd6421c2aa4b707f9e"
 
       define_method(:install) do
         bin.install "taxpilot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/christopherklint97/taxpilot/releases/download/v0.1.0/taxpilot_0.1.0_darwin_arm64.tar.gz"
-      sha256 "2110ce4ac91e9697a5d2ed49dcaa38039a26f1f9414c807343bf2d276ec5abaf"
+      url "https://github.com/christopherklint97/taxpilot/releases/download/v0.1.1/taxpilot_0.1.1_darwin_arm64.tar.gz"
+      sha256 "970fb198a54921590b81012f08948ed8c23ed51759e63367fabc50983bfbae04"
 
       define_method(:install) do
         bin.install "taxpilot"
@@ -29,15 +29,15 @@ class Taxpilot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/christopherklint97/taxpilot/releases/download/v0.1.0/taxpilot_0.1.0_linux_amd64.tar.gz"
-      sha256 "ff40e5fb53636628441daf94eca48a1975016c866ec6a00351176e3ecadf254f"
+      url "https://github.com/christopherklint97/taxpilot/releases/download/v0.1.1/taxpilot_0.1.1_linux_amd64.tar.gz"
+      sha256 "4032dd554ce676b12bc325c7e225ae29029c83978722c857fc25c6fc9216d0db"
       define_method(:install) do
         bin.install "taxpilot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/christopherklint97/taxpilot/releases/download/v0.1.0/taxpilot_0.1.0_linux_arm64.tar.gz"
-      sha256 "5735db2518e2892c4839ea307468d8d25da9ce1331bc1acd20b913b47e532983"
+      url "https://github.com/christopherklint97/taxpilot/releases/download/v0.1.1/taxpilot_0.1.1_linux_arm64.tar.gz"
+      sha256 "a917060c3677fbf25b2c492339d1c6c9247d5af145116dcc794541570755638f"
       define_method(:install) do
         bin.install "taxpilot"
       end
